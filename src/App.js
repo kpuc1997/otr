@@ -4,7 +4,7 @@ import KNavbar from './components/KNavbar';
 import KNavLink from './components/KNavLink';
 import KNavRoute from './components/KNavRoute';
 import {
-  BrowserRouter as Router,
+  HashRouter as Router,
   Switch,
   Route,
 } from "react-router-dom";
