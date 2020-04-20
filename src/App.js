@@ -27,7 +27,7 @@ const KRoutes = pages.map((item) => (<KNavRoute page={item} key={item.name} />))
 
 function App() {
   return (
-    <Router>
+    <Router basename={process.env.PUBLIC_URL}>
       <KNavbar brand={"OTR"} button={KNavButton}>
         {KLinks}
         <NavDropdown title="Listen" id="basic-nav-dropdown">
