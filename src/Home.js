@@ -5,20 +5,38 @@ import { Jumbotron,
     Row,
     Col,
     Card, } from 'react-bootstrap';
+import Pic2 from './WUML 1.png';
 
 class Home extends React.Component{
 
     render(){
         return <div>
                     <Jumbotron>
-                        <h1>Off the Rails, On the Airwaves</h1>
+                        <Container>
+                            <Row>
+                                <Col xs={16}>
+                                    <h1>Off the Rails, On the Airwaves</h1>
+                                    <p>
+                                    This is a simple hero unit, a simple jumbotron-style component for calling
+                                    extra attention to featured content or information.
+                                    </p>
+                                    <p>
+                                    <Button variant="primary" href="http://wuml.org">Find us @ WUML.org</Button>
+                                    </p>
+                                </Col>
+                                <Col xs={16} className="d-sm-none">
+                                    <img className="img-fluid" alt="" src={Pic2} />
+                                </Col>
+                            </Row>
+                        </Container>
+                        {/* <h1>Off the Rails, On the Airwaves</h1>
                         <p>
                         This is a simple hero unit, a simple jumbotron-style component for calling
                         extra attention to featured content or information.
                         </p>
                         <p>
                         <Button variant="primary" href="http://wuml.org">Find us @ WUML.org</Button>
-                        </p>
+                        </p> */}
                     </Jumbotron>
                     <Container>
                         <Row>

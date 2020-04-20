@@ -12,13 +12,14 @@ import pages from './pages';
 import { Button, NavDropdown } from 'react-bootstrap';
 import Pic from './bee.png';
 import Home from './Home';
-import BrainPowder from './BrainPowder';
+import Pic2 from './WUML 1.png';
+
 
 const player = <iframe title="stream" src="https://embed.radio.co/player/fa3c718.html" width="100%" allow="autoplay" scrolling="no" style={{border: 'none', overflow: 'hidden', maxWidth: '400px', margin: '0px auto', height: '100px',}}></iframe>;
 
 const KNavButton = <div id='beebutton'>
   <Button variant='secondary' href="https://www.pollinator.org/">
-    Bees <img src={Pic} width='25' alt=""/>
+    Bees? <img src={Pic} width='25' alt=""/>
   </Button>
   </div>
 
@@ -40,6 +41,7 @@ function App() {
         {KRoutes}
         </>
       </Switch>
+      <img className='img-fluid pt-2' src={Pic2} alt="" />
     </Router>
   );
 }
