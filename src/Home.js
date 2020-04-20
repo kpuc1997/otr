@@ -6,27 +6,32 @@ import { Jumbotron,
     Col,
     Card, } from 'react-bootstrap';
 import Pic2 from './WUML 1.png';
+import Pic3 from './otrbanner.jpeg';
 
 class Home extends React.Component{
 
     render(){
         return <div>
-                    <Jumbotron>
-                        <Container>
-                            <Row>
-                                <Col xs={16}>
-                                    <h1>Off the Rails, On the Airwaves</h1>
-                                    <p>
-                                    This is a simple hero unit, a simple jumbotron-style component for calling
-                                    extra attention to featured content or information.
-                                    </p>
-                                    <p>
-                                    <Button variant="primary" href="http://wuml.org">Find us @ WUML.org</Button>
-                                    </p>
+                        <Container className=''>
+                            <Row className='align-items-center'>
+                                <Col xs={12} sm={4} className='pt-4 align-self-center'>
+                                    <Jumbotron className='pt-3 pb-3'>
+                                        <h1>Off the Rails, On the Airwaves</h1>
+                                        <p>
+                                        This is a simple hero unit, a simple jumbotron-style component for calling
+                                        extra attention to featured content or information.
+                                        </p>
+                                        <p>
+                                        <Button variant="primary" href="http://wuml.org">Find us @ WUML.org</Button>
+                                        </p>
+                                    </Jumbotron>
                                 </Col>
-                                <Col xs={16} className="d-sm-none">
-                                    <img className="img-fluid" alt="" src={Pic2} />
+                                <Col xs={12} sm={8} className="align-self-center pb-sm-4 pb-4">
+                                    <img className="img-fluid" alt="" src={Pic3} />
                                 </Col>
+                                {/* <Col xs={4}>
+                                
+                                </Col> */}
                             </Row>
                         </Container>
                         {/* <h1>Off the Rails, On the Airwaves</h1>
@@ -37,10 +42,9 @@ class Home extends React.Component{
                         <p>
                         <Button variant="primary" href="http://wuml.org">Find us @ WUML.org</Button>
                         </p> */}
-                    </Jumbotron>
-                    <Container>
+                    <Container className=''>
                         <Row>
-                            <Col>
+                            <Col className='pb-2'>
                                 <Card className='mx-auto' style={{ width: '18rem' }}>
                                     <Card.Img variant="top" src="https://picsum.photos/268/180?random=1" />
                                     <Card.Body>
@@ -52,7 +56,7 @@ class Home extends React.Component{
                                     </Card.Body>
                                 </Card>
                             </Col>
-                            <Col>
+                            <Col className='pb-2'>
                                 <Card className='mx-auto' style={{ width: '18rem' }}>
                                     <Card.Img variant="top" src="https://picsum.photos/268/180?random=2" />
                                     <Card.Body>
@@ -65,7 +69,7 @@ class Home extends React.Component{
                                     </Card.Body>
                                 </Card>
                             </Col>
-                            <Col>
+                            <Col className='pb-2'>
                                 <Card className='mx-auto' style={{ width: '18rem' }}>
                                     <Card.Img variant="top" src="https://picsum.photos/268/180?random=3" />
                                     <Card.Body>
