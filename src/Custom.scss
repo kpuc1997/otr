@@ -9,4 +9,8 @@ $theme-colors: (
     // "dark":       $dark,
 );
 
+.dropdown-menu {
+    width: 400px !important;
+}
+
 @import "~bootstrap/scss/bootstrap";
