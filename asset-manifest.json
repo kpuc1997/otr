@@ -1,27 +1,27 @@
 {
   "files": {
-    "main.css": "/otr/static/css/main.c9eaa74b.chunk.css",
-    "main.js": "/otr/static/js/main.56b8d4b5.chunk.js",
-    "main.js.map": "/otr/static/js/main.56b8d4b5.chunk.js.map",
-    "runtime-main.js": "/otr/static/js/runtime-main.30e6d316.js",
-    "runtime-main.js.map": "/otr/static/js/runtime-main.30e6d316.js.map",
-    "static/js/2.bb2c8219.chunk.js": "/otr/static/js/2.bb2c8219.chunk.js",
-    "static/js/2.bb2c8219.chunk.js.map": "/otr/static/js/2.bb2c8219.chunk.js.map",
-    "index.html": "/otr/index.html",
-    "precache-manifest.20e8e0550d40109e208227cc062c805e.js": "/otr/precache-manifest.20e8e0550d40109e208227cc062c805e.js",
-    "service-worker.js": "/otr/service-worker.js",
-    "static/css/main.c9eaa74b.chunk.css.map": "/otr/static/css/main.c9eaa74b.chunk.css.map",
-    "static/js/2.bb2c8219.chunk.js.LICENSE.txt": "/otr/static/js/2.bb2c8219.chunk.js.LICENSE.txt",
-    "static/media/WUML 1.png": "/otr/static/media/WUML 1.4deff0a5.png",
-    "static/media/WUML 2.png": "/otr/static/media/WUML 2.09241dd8.png",
-    "static/media/bee.png": "/otr/static/media/bee.d3f0a6fb.png",
-    "static/media/brainathlete.png": "/otr/static/media/brainathlete.61be6554.png",
-    "static/media/smilyguy.png": "/otr/static/media/smilyguy.57bb5dfa.png"
+    "main.css": "/static/css/main.c9eaa74b.chunk.css",
+    "main.js": "/static/js/main.9e0eb4cf.chunk.js",
+    "main.js.map": "/static/js/main.9e0eb4cf.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.96b37f9c.js",
+    "runtime-main.js.map": "/static/js/runtime-main.96b37f9c.js.map",
+    "static/js/2.bb2c8219.chunk.js": "/static/js/2.bb2c8219.chunk.js",
+    "static/js/2.bb2c8219.chunk.js.map": "/static/js/2.bb2c8219.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.ca6826c543d818f1a00823729d0e91bc.js": "/precache-manifest.ca6826c543d818f1a00823729d0e91bc.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.c9eaa74b.chunk.css.map": "/static/css/main.c9eaa74b.chunk.css.map",
+    "static/js/2.bb2c8219.chunk.js.LICENSE.txt": "/static/js/2.bb2c8219.chunk.js.LICENSE.txt",
+    "static/media/WUML 1.png": "/static/media/WUML 1.4deff0a5.png",
+    "static/media/WUML 2.png": "/static/media/WUML 2.09241dd8.png",
+    "static/media/bee.png": "/static/media/bee.d3f0a6fb.png",
+    "static/media/brainathlete.png": "/static/media/brainathlete.61be6554.png",
+    "static/media/smilyguy.png": "/static/media/smilyguy.57bb5dfa.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.30e6d316.js",
+    "static/js/runtime-main.96b37f9c.js",
     "static/js/2.bb2c8219.chunk.js",
     "static/css/main.c9eaa74b.chunk.css",
-    "static/js/main.56b8d4b5.chunk.js"
+    "static/js/main.9e0eb4cf.chunk.js"
   ]
 }
