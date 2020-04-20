@@ -11,7 +11,7 @@ class Staff extends React.Component{
             <h1 className='text-center text-primary'>Our Staff</h1>
                 <Container>
                     <Row>
-                        <Col>
+                        <Col className='mb-2'>
                             <Card className='mx-auto' style={{ width: '18rem' }}>
                                 <Card.Img variant="top" src="https://picsum.photos/268/180?random=9" />
                                 <Card.Body>
@@ -22,7 +22,7 @@ class Staff extends React.Component{
                                 </Card.Body>
                             </Card>
                         </Col>
-                        <Col>
+                        <Col className='mb-2'>
                             <Card className='mx-auto' style={{ width: '18rem' }}>
                                 <Card.Img variant="top" src="https://picsum.photos/268/180?random=8" />
                                 <Card.Body>
@@ -33,7 +33,7 @@ class Staff extends React.Component{
                                 </Card.Body>
                             </Card>
                         </Col>
-                        <Col>
+                        <Col className='mb-2'>
                             <Card className='mx-auto' style={{ width: '18rem' }}>
                                 <Card.Img variant="top" src="https://picsum.photos/268/180?random=7" />
                                 <Card.Body>
@@ -45,8 +45,8 @@ class Staff extends React.Component{
                             </Card>
                         </Col>
                     </Row>
-                    <Row className='pt-2'>
-                        <Col>
+                    <Row>
+                        <Col className='mb-2'>
                             <Card className='mx-auto' style={{ width: '18rem' }}>
                                 <Card.Img variant="top" src="https://picsum.photos/id/823/268/180?random=4" />
                                 <Card.Body>
@@ -57,7 +57,7 @@ class Staff extends React.Component{
                                 </Card.Body>
                             </Card>
                         </Col>
-                        <Col>
+                        <Col className='mb-2'>
                             <Card className='mx-auto' style={{ width: '18rem' }}>
                                 <Card.Img variant="top" src="https://picsum.photos/id/1005/268/180" />
                                 <Card.Body>
@@ -68,7 +68,7 @@ class Staff extends React.Component{
                                 </Card.Body>
                             </Card>
                         </Col>
-                        <Col>
+                        <Col className='mb-2'>
                             <Card className='mx-auto' style={{ width: '18rem' }}>
                                 <Card.Img variant="top" src="https://picsum.photos/id/1011/268/180" />
                                 <Card.Body>
@@ -79,10 +79,9 @@ class Staff extends React.Component{
                                 </Card.Body>
                             </Card>
                         </Col>
-                        
                     </Row>
-                    <Row className='pt-2'>
-                        <Col>
+                    <Row>
+                        <Col className='mb-2'>
                             <Card className='mx-auto' style={{ width: '18rem' }}>
                                 <Card.Img variant="top" src="https://picsum.photos/id/1027/268/180" />
                                 <Card.Body>
@@ -93,7 +92,7 @@ class Staff extends React.Component{
                                 </Card.Body>
                             </Card>
                         </Col>
-                        <Col>
+                        <Col className='mb-2'>
                             <Card className='mx-auto' style={{ width: '18rem' }}>
                                 <Card.Img variant="top" src="https://picsum.photos/id/804/268/180" />
                                 <Card.Body>
@@ -104,7 +103,7 @@ class Staff extends React.Component{
                                 </Card.Body>
                             </Card>
                         </Col>
-                        <Col>
+                        <Col className='mb-2'>
                             <Card className='mx-auto' style={{ width: '18rem' }}>
                                 <Card.Img variant="top" src="https://picsum.photos/id/1074/268/180" />
                                 <Card.Body>

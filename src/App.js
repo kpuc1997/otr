@@ -31,8 +31,8 @@ function App() {
     <Router basename={process.env.PUBLIC_URL + '/'}>
       <KNavbar brand={"OTR"} button={KNavButton}>
         {KLinks}
-        <NavDropdown title="Listen" id="basic-nav-dropdown">
-          <NavDropdown.Item >{player}</NavDropdown.Item>
+        <NavDropdown title="Listen" id="basic-nav-dropdown" >
+          <NavDropdown.Item>{player}</NavDropdown.Item>
         </NavDropdown>
       </KNavbar>
       <Switch>
@@ -41,7 +41,7 @@ function App() {
         {KRoutes}
         </>
       </Switch>
-      <img className='img-fluid pt-2' src={Pic2} alt="" />
+      <img className='img-fluid pt-2 mx-auto' src={Pic2} alt="" />
     </Router>
   );
 }

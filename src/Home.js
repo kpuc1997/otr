@@ -29,19 +29,8 @@ class Home extends React.Component{
                                 <Col xs={12} sm={8} className="align-self-center pb-sm-4 pb-4">
                                     <img className="img-fluid" alt="" src={Pic3} />
                                 </Col>
-                                {/* <Col xs={4}>
-                                
-                                </Col> */}
                             </Row>
                         </Container>
-                        {/* <h1>Off the Rails, On the Airwaves</h1>
-                        <p>
-                        This is a simple hero unit, a simple jumbotron-style component for calling
-                        extra attention to featured content or information.
-                        </p>
-                        <p>
-                        <Button variant="primary" href="http://wuml.org">Find us @ WUML.org</Button>
-                        </p> */}
                     <Container className=''>
                         <Row>
                             <Col className='pb-2'>
