@@ -5,8 +5,11 @@ import { Jumbotron,
     Row,
     Col,
     Card, } from 'react-bootstrap';
-import Pic2 from './WUML 1.png';
 import Pic3 from './otrbanner.jpeg';
+
+const twitter = <div>
+    <a className="twitter-timeline" data-width="400" data-height="400" data-dnt="true" href="https://twitter.com/wumlradio?ref_src=twsrc%5Etfw">Tweets by wumlradio</a>
+    </div>;
 
 class Home extends React.Component{
 
@@ -68,6 +71,11 @@ class Home extends React.Component{
                                         </Card.Text>
                                     </Card.Body>
                                 </Card>
+                            </Col>
+                        </Row>
+                        <Row className='mx-auto align-items-center'>
+                            <Col xs={12} sm={5} className='mx-auto align-self-center'>
+                            {twitter}
                             </Col>
                         </Row>
                     </Container>

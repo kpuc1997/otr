@@ -3,6 +3,7 @@ import { Container,
     Row,
     Col,
     Card, } from 'react-bootstrap';
+import Pic from './kcsp.jpg';
 
 class Staff extends React.Component{
 
@@ -35,7 +36,7 @@ class Staff extends React.Component{
                         </Col>
                         <Col className='mb-2'>
                             <Card className='mx-auto' style={{ width: '18rem' }}>
-                                <Card.Img variant="top" src="https://picsum.photos/268/180?random=7" />
+                                <Card.Img variant="top" src={Pic} />
                                 <Card.Body>
                                     <Card.Title>Kyle</Card.Title>
                                     <Card.Text>
