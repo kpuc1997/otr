@@ -36,7 +36,7 @@ class Staff extends React.Component{
                         </Col>
                         <Col className='mb-2'>
                             <Card className='mx-auto' style={{ width: '18rem' }}>
-                                <Card.Img variant="top" src={Pic} />
+                                <Card.Img variant="top" className="kimg" src={Pic} height="180" width="268" />
                                 <Card.Body>
                                     <Card.Title>Kyle</Card.Title>
                                     <Card.Text>

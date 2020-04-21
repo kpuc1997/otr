@@ -30,32 +30,32 @@ const KLinks = pages.map((item) => (<KNavLink page={item} key={item.name}/>));
 const KRoutes = pages.map((item) => (<KNavRoute page={item} key={item.name} />));
 
 // Function to retrieve recordings list
-async function getRecordings(){
-  const url = 'https://api.dropboxapi.com/2/files/list_folder';
-  const data = {
-    path: "",
-    shared_link: '{"url": "https://www.dropbox.com/sh/x803wja5vch2l7d/AACRsW0xmtdoLubihr8DE9pYa/Recorded%20Shows?dl=0&subfolder_nav_tracking=1"}',
-    recursive: false,
-    include_media_info: true,
-    include_deleted: false,
-    include_has_explicit_shared_members: false,
-    include_mounted_folders: true,
-    include_non_downloadable_files: true,
-  };
-  const otherParams = {
-    headers:{
-      "Authorization": "Bearer sl.AYmJzkWQbOWg_OutYvBlD78oSvUYv-7ppwkvohbhpzV2h6MOl5buVajj-4Yj_xV_rbDSWsBJ53zqYg8lirY1s134RCDmD7jnVHtcHnsKXrLlEILA7P5UC6Nyq05z6JrOwbKEqa2l",
-      "Content-Type": "application/json",
-    },
-    body: data,
-    method: "POST",
-  };
-  let response = await fetch(url, otherParams);
-  console.log(response)
-  let returndata = await response;
-  console.log(returndata)
-  // returndata.then(item => console.log(item));
-}
+// async function getRecordings(){
+//   const url = 'https://api.dropboxapi.com/2/files/list_folder';
+//   const data = {
+//     path: "",
+//     shared_link: '{"url": "https://www.dropbox.com/sh/x803wja5vch2l7d/AACRsW0xmtdoLubihr8DE9pYa/Recorded%20Shows?dl=0&subfolder_nav_tracking=1"}',
+//     recursive: false,
+//     include_media_info: true,
+//     include_deleted: false,
+//     include_has_explicit_shared_members: false,
+//     include_mounted_folders: true,
+//     include_non_downloadable_files: true,
+//   };
+//   const otherParams = {
+//     headers:{
+//       "Authorization": "Bearer sl.AYmJzkWQbOWg_OutYvBlD78oSvUYv-7ppwkvohbhpzV2h6MOl5buVajj-4Yj_xV_rbDSWsBJ53zqYg8lirY1s134RCDmD7jnVHtcHnsKXrLlEILA7P5UC6Nyq05z6JrOwbKEqa2l",
+//       "Content-Type": "application/json",
+//     },
+//     body: data,
+//     method: "POST",
+//   };
+//   let response = await fetch(url, otherParams);
+//   console.log(response)
+//   let returndata = await response;
+//   console.log(returndata)
+//   // returndata.then(item => console.log(item));
+// }
 
 class App extends React.Component{
   constructor(props){

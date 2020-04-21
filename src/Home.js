@@ -6,10 +6,7 @@ import { Jumbotron,
     Col,
     Card, } from 'react-bootstrap';
 import Pic3 from './otrbanner.jpeg';
-
-const twitter = <div>
-    <a className="twitter-timeline" data-width="400" data-height="400" data-dnt="true" href="https://twitter.com/wumlradio?ref_src=twsrc%5Etfw">Tweets by wumlradio</a>
-    </div>;
+import { TwitterTimelineEmbed } from 'react-twitter-embed';
 
 class Home extends React.Component{
 
@@ -75,7 +72,11 @@ class Home extends React.Component{
                         </Row>
                         <Row className='mx-auto align-items-center'>
                             <Col xs={12} sm={5} className='mx-auto align-self-center'>
-                            {twitter}
+                                <TwitterTimelineEmbed
+                                    sourceType="profile"
+                                    screenName="wumlradio"
+                                    options={{height: 400}}
+                                    />
                             </Col>
                         </Row>
                     </Container>
