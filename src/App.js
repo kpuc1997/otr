@@ -88,7 +88,7 @@ class App extends React.Component{
         </RecordingsContext.Provider>
         </>
       </Switch>
-      <img className='img-fluid pt-2 mx-auto' src={Pic2} alt="" />
+      <img className='img-fluid pt-2 mx-auto d-block' src={Pic2} alt="" />
     </Router>
   )
   }

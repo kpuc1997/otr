@@ -18,8 +18,9 @@ class Home extends React.Component{
                                     <Jumbotron className='pt-3 pb-3'>
                                         <h1>Off the Rails, On the Airwaves</h1>
                                         <p>
-                                        This is a simple hero unit, a simple jumbotron-style component for calling
-                                        extra attention to featured content or information.
+                                        With the decline of the coal industry, 3 ex-miners trade in their picaxes for microphones
+                                        in this off the cuff radio show. Features include great ecclectic music, insightful talking segments,
+                                        and a surprising focus on bakery products. 
                                         </p>
                                         <p>
                                         <Button variant="primary" href="http://wuml.org">Find us @ WUML.org</Button>
