@@ -18,7 +18,7 @@ class Staff extends React.Component{
                                 <Card.Body>
                                     <Card.Title>Ben</Card.Title>
                                     <Card.Text>
-                                    Love is an important component in a persons relationships and in this radio show.
+                                    Nam consectetur lectus leo, eget rutrum lectus gravida non. Vestibulum vel ligula lacus. 
                                     </Card.Text>
                                 </Card.Body>
                             </Card>
@@ -29,7 +29,7 @@ class Staff extends React.Component{
                                 <Card.Body>
                                     <Card.Title>Vicki</Card.Title>
                                     <Card.Text>
-                                    Love is an important component in a persons relationships and in this radio show.
+                                    Pellentesque lectus dui, convallis ac tempor eget, interdum quis sem. Vestibulum semper tellus id felis commodo hendrerit.
                                     </Card.Text>
                                 </Card.Body>
                             </Card>
