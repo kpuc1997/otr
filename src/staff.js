@@ -18,7 +18,8 @@ class Staff extends React.Component{
                                 <Card.Body>
                                     <Card.Title>Ben</Card.Title>
                                     <Card.Text>
-                                    Nam consectetur lectus leo, eget rutrum lectus gravida non. Vestibulum vel ligula lacus. 
+                                    No one is really sure what his job is or why he’s here, but we are sure that his jokes aren’t funny. Currently located
+                                    in the steps of China.
                                     </Card.Text>
                                 </Card.Body>
                             </Card>
@@ -29,7 +30,8 @@ class Staff extends React.Component{
                                 <Card.Body>
                                     <Card.Title>Vicki</Card.Title>
                                     <Card.Text>
-                                    Pellentesque lectus dui, convallis ac tempor eget, interdum quis sem. Vestibulum semper tellus id felis commodo hendrerit.
+                                    Pellentesque lectus dui, convallis ac tempor eget, interdum quis sem. Vestibulum semper tellus id felis commodo hendrerit. Currently 
+                                    located underground about 20 miles in an undisclosed location.
                                     </Card.Text>
                                 </Card.Body>
                             </Card>
@@ -41,6 +43,7 @@ class Staff extends React.Component{
                                     <Card.Title>Kyle</Card.Title>
                                     <Card.Text>
                                     The hip hopenest, rip tearenest, jack hammerenest, bip bopenest DJ this side of the Nile River.
+                                    Stuck in Wyoming trying to get his plane repaired.
                                     </Card.Text>
                                 </Card.Body>
                             </Card>
@@ -88,7 +91,7 @@ class Staff extends React.Component{
                                 <Card.Body>
                                     <Card.Title>Lucy</Card.Title>
                                     <Card.Text>
-                                    The muscle.
+                                    The muscle. Also a journalist with trust issues.
                                     </Card.Text>
                                 </Card.Body>
                             </Card>
@@ -99,7 +102,7 @@ class Staff extends React.Component{
                                 <Card.Body>
                                     <Card.Title>Vulfrich</Card.Title>
                                     <Card.Text>
-                                    A funky ex-cop with nothing to lose. Works as our wardrobe artist.
+                                    A funky ex-cop with nothing to lose. Works as our wardrobe artist. He's pretty jaded in general.
                                     </Card.Text>
                                 </Card.Body>
                             </Card>

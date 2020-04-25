@@ -20,7 +20,7 @@ class Home extends React.Component{
                                         <p>
                                         With the decline of the coal industry, 3 ex-miners trade in their picaxes for microphones
                                         in this off the cuff radio show. Features include great ecclectic music, insightful talking segments,
-                                        and a surprising focus on bakery products. 
+                                        and a surprising focus on bakery products. Our motto is, "Monetization at any cost!"
                                         </p>
                                         <p>
                                         <Button variant="primary" href="http://wuml.org">Find us @ WUML.org</Button>
