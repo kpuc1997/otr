@@ -19,8 +19,10 @@ class Staff extends React.Component{
                                 <Card.Body>
                                     <Card.Title>Ben</Card.Title>
                                     <Card.Text>
-                                    No one is really sure what his job is or why he’s here, but we are sure that his jokes aren’t funny. Currently located
-                                    in the steps of China.
+                                    Tell me, O Muse, the cause; wherein thwarted in will or wherefore angered, 
+                                    did the Queen of heaven drive a man, of goodness so wondrous, 
+                                    to traverse so many perils, to face so many toils. 
+                                    Can heavenly spirits cherish resentment so dire?
                                     </Card.Text>
                                 </Card.Body>
                             </Card>
@@ -31,8 +33,11 @@ class Staff extends React.Component{
                                 <Card.Body>
                                     <Card.Title>Vicki</Card.Title>
                                     <Card.Text>
-                                    Pellentesque lectus dui, convallis ac tempor eget, interdum quis sem. Vestibulum semper tellus id felis commodo hendrerit. Currently 
-                                    located underground about 20 miles in an undisclosed location.
+                                    In nature's fight pit, a host of ruthless bugs as bizarre as they are 
+                                    lethal slug it out in real-life battles to the death. Witness epic 
+                                    encounters between swarms of marauding assassins, and vicious 
+                                    one-on-one clashes where only one bug survives. The world of monster 
+                                    bugs is a jungle, where there's just one law: eat or be eaten.
                                     </Card.Text>
                                 </Card.Body>
                             </Card>
