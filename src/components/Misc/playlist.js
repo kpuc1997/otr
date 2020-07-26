@@ -7,8 +7,10 @@ import { Container,
 //                     {props.children}
 //                 </Col>)
 
-const Playlist = (props) => (<Col className='align-self-center mx-auto'>
+const Playlist = (props) => (<Col>
+                        <div align='center'>
                         {props.children}
+                        </div>
                 </Col>)
 
 export default Playlist;

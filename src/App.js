@@ -13,6 +13,7 @@ import Pic2 from './WUML 1.png';
 import RecordingsContext from './recordingsContext';
 import player from './components/Misc/wumlplayer';
 import BeeButton from './components/Misc/beebutton/beebutton';
+import Secret from './Secret';
 
 // React router components generated from external pages.js
 const KLinks = pages.map((item) => (<KNavLink page={item} key={item.name}/>));
@@ -41,6 +42,7 @@ class App extends React.Component{
       </KNavbar>
       <Switch>
         <Route exact path="/" component={Home} />
+        <Route exact path="/secret" component={Secret} />
         <>
         <RecordingsContext.Provider value={this.state.recordings}>
           {KRoutes}

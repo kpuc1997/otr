@@ -2,12 +2,17 @@ import React from 'react';
 import Playlist from './components/Misc/playlist.js';
 import { Container,
     Row,
-    Col, } from 'react-bootstrap';
+    Col } from 'react-bootstrap';
 
 class Playlists extends React.Component{
     render() {
         return <Container>
-                    <Row className='align-items-center mx-auto'>
+                    <Row className='justify-content-around'>
+
+                        {/* 7/25/2020 */}
+                        <Playlist>
+                            <iframe src="https://open.spotify.com/embed/playlist/7qWUYNxayDGF7UHgCh15c7" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                        </Playlist>
 
                         {/* 7/18/2020 */}
                         <Playlist>
@@ -48,6 +53,47 @@ class Playlists extends React.Component{
                         <Playlist>
                             <iframe src="https://open.spotify.com/embed/playlist/3Hf8qzFuVvpKdnM1mdXOzV" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
                         </Playlist>
+
+                        {/*  */}
+                        <Playlist>
+                            <iframe src="https://open.spotify.com/embed/playlist/4tY8j5ZcBNsr7uNRI2T66C" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                        </Playlist>
+
+                        {/*  */}
+                        <Playlist>
+                            <iframe src="https://open.spotify.com/embed/playlist/4D54jZcCuUtq9YBzazdwkw" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                        </Playlist>
+
+                        {/*  */}
+                        <Playlist>
+                            <iframe src="https://open.spotify.com/embed/playlist/5khHCxrCNivZrCUn3FCI65" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                        </Playlist>
+
+                        {/*  */}
+                        <Playlist>
+                            <iframe src="https://open.spotify.com/embed/playlist/3SrMVulkCtQtSxq8JIUhrA" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                        </Playlist>
+
+                        {/*  */}
+                        <Playlist>
+                            <iframe src="https://open.spotify.com/embed/playlist/3SrMVulkCtQtSxq8JIUhrA" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                        </Playlist>
+
+                        {/*  */}
+                        <Playlist>
+                            <iframe src="https://open.spotify.com/embed/playlist/5FWO7fPBnr35vVWIGFiX5T" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                        </Playlist>
+
+                        {/*  */}
+                        <Playlist>
+                            <iframe src="https://open.spotify.com/embed/playlist/3BL8AR6ogjRytEORGTGgyS" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                        </Playlist>
+
+                        {/*  */}
+                        <Playlist>
+                            <iframe src="https://open.spotify.com/embed/playlist/6CQn1gxj82Xx1hrHRu7PEt" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                        </Playlist>
+
                     </Row>
                 </Container>
         

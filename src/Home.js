@@ -83,7 +83,7 @@ class Home extends React.Component{
                                     />
                             </Col>
                             <Col xs={12} sm={4} className='mx-auto align-self-center'>
-                                <iframe src="https://open.spotify.com/embed/playlist/6fuDDUaszOEmjFomRto5mx" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                                <iframe src="https://open.spotify.com/embed/playlist/7qWUYNxayDGF7UHgCh15c7" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
                             </Col>
                         </Row>
                     </Container>
