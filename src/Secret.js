@@ -1,12 +1,8 @@
 import React from 'react';
-import Playlist from './components/Misc/playlist.js';
-import { Container,
-    Row,
-    Col } from 'react-bootstrap';
 
 class Secret extends React.Component{
     render() {
-        return <div>
+        return <div align='center'>
             <a href="https://berklee.zoom.us/j/7799905527?pwd=Z1dTa2Q3amt6b1pEWlNhTUZNZGVhQT09">Zoom Link<br /></a>
             <br />
 

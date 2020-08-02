@@ -1,10 +1,9 @@
 import React from 'react';
 import './Custom.scss';
-import { Carousel, Col,
+import { Col,
    Card,
   Row,
-  Container,
-  Button, } from 'react-bootstrap';
+  Container,} from 'react-bootstrap';
 
 function Poll() {
   return (<div>
@@ -20,7 +19,7 @@ function Poll() {
                         with your favorite radio hosts.
                         </Card.Text>
                         <div class="embed-responsive embed-responsive-1by1">
-                            <iframe className="embed-responsive-item" src="https://docs.google.com/forms/d/e/1FAIpQLSeR1bf7yOHo8WhZOTmndGQApmWRrmq8Vyk-tn0X3byUhMoctQ/viewform?embedded=true" width="986" height="986" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+                            <iframe title='Munch Marry Murder' className="embed-responsive-item" src="https://docs.google.com/forms/d/e/1FAIpQLSeR1bf7yOHo8WhZOTmndGQApmWRrmq8Vyk-tn0X3byUhMoctQ/viewform?embedded=true" width="986" height="986" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
                         </div>
                     </Card.Body>
                 </Card>

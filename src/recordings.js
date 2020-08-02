@@ -15,16 +15,16 @@ class Recordings extends React.Component{
 
 
                         {/* 5/23/2020 */}
-                        <iframe width="100%" height="120" src="https://www.mixcloud.com/widget/iframe/?hide_cover=1&light=1&feed=%2Fbmillzthedefector%2Foff-the-rails-on-the-airwaves-may-23-2020%2F" frameborder="0" ></iframe>
+                        <iframe title='5-3-2020' width="100%" height="120" src="https://www.mixcloud.com/widget/iframe/?hide_cover=1&light=1&feed=%2Fbmillzthedefector%2Foff-the-rails-on-the-airwaves-may-23-2020%2F" frameborder="0" ></iframe>
 
                         {/* 5/16/2020 */}
-                        <iframe width="100%" height="120" src="https://www.mixcloud.com/widget/iframe/?hide_cover=1&light=1&feed=%2Fbmillzthedefector%2Foff-the-rails-on-the-airwaves-may-16-2020%2F" frameBorder="0" ></iframe>
+                        <iframe title='5-16-2020' width="100%" height="120" src="https://www.mixcloud.com/widget/iframe/?hide_cover=1&light=1&feed=%2Fbmillzthedefector%2Foff-the-rails-on-the-airwaves-may-16-2020%2F" frameBorder="0" ></iframe>
                         
                         {/* 5/2/2020 */}
-                        <iframe width="100%" height="120" src="https://www.mixcloud.com/widget/iframe/?hide_cover=1&light=1&feed=%2Fbmillzthedefector%2Foff-the-rails-on-the-airwaves-may-02-2020%2F" frameBorder="0" ></iframe>
+                        <iframe title='5-2-2020' width="100%" height="120" src="https://www.mixcloud.com/widget/iframe/?hide_cover=1&light=1&feed=%2Fbmillzthedefector%2Foff-the-rails-on-the-airwaves-may-02-2020%2F" frameBorder="0" ></iframe>
                         
                         {/* 4/11/2020 */}
-                        <iframe width="100%" height="120" src="https://www.mixcloud.com/widget/iframe/?hide_cover=1&light=1&feed=%2Fbmillzthedefector%2Foff-the-rails-on-the-airwaves-april-11-2020%2F" frameborder="0" ></iframe>
+                        <iframe title='4-11-2020' width="100%" height="120" src="https://www.mixcloud.com/widget/iframe/?hide_cover=1&light=1&feed=%2Fbmillzthedefector%2Foff-the-rails-on-the-airwaves-april-11-2020%2F" frameborder="0" ></iframe>
 
                         </Col>
                     </Row>

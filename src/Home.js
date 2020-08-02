@@ -7,7 +7,6 @@ import { Jumbotron,
     Card, } from 'react-bootstrap';
 import Pic3 from './otrbanner.jpeg';
 import { TwitterTimelineEmbed } from 'react-twitter-embed';
-import Playlist from './components/Misc/playlist';
 
 class Home extends React.Component{
 
@@ -23,7 +22,7 @@ class Home extends React.Component{
                                         in this off the cuff radio show. Features include great ecclectic music, insightful talking segments,
                                         and a surprising focus on bakery products. Our motto is, "Monetization at any cost!"
                                         <br/><br/>
-                                        Text in! <a href='sms:9789344969'>978-934-4969</a> We can't answer your calls remotely but we can answer your texts.
+                                        Text in! <a href='sms:9789344969'>978-934-4969</a> We can't answer your calls but we can answer your texts.
                                         </p>
                                         <p>
                                         <Button variant="primary" href="http://wuml.org">Find us @ WUML.org</Button>
@@ -82,8 +81,8 @@ class Home extends React.Component{
                                     options={{height: 400}}
                                     />
                             </Col>
-                            <Col xs={12} sm={4} className='mx-auto align-self-center'>
-                                <iframe src="https://open.spotify.com/embed/playlist/7qWUYNxayDGF7UHgCh15c7" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                            <Col xs={12} sm={4} align='center' className='mx-auto align-self-center'>
+                                <iframe title='8-1-2020' align='center' src="https://open.spotify.com/embed/playlist/5rreHV3f8UQ3X5XIVEWaLj" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
                             </Col>
                         </Row>
                     </Container>
