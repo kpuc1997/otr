@@ -4,7 +4,8 @@ import Recordings from './recordings';
 import Skating from './matadorskating';
 import Poll from './mmmPoll';
 import Playlists from './playlists';
-import TOS from './termsofservice';
+// import TOS from './termsofservice';
+// import Install from './install';
 
 const pages = [
     {name:"Staff", url:"/Staff", component: Staff},
@@ -13,7 +14,8 @@ const pages = [
     {name: "Munch, Marry, Murder", url:'/mmm', component: Poll},
     {name:"Brain Powder", url:'/BrainPowder', component: BrainPowder},
     {name:"Matador Skating", url:"/Skating", component: Skating},
-    {name:'Terms of Service', url:'/TermsofService', component: TOS}
+    // {name:'Terms of Service', url:'/TermsofService', component: TOS},
+    // {name: 'Install', url: '/install', component: Install},
     
 ];
 

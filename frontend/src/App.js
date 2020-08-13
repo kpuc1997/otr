@@ -14,6 +14,7 @@ import RecordingsContext from './recordingsContext';
 import player from './components/Misc/wumlplayer';
 import BeeButton from './components/Misc/beebutton/beebutton';
 import Secret from './Secret';
+import TOS from './termsofservice'
 
 // React router components generated from external pages.js
 const KLinks = pages.map((item) => (<KNavLink page={item} key={item.name}/>));
@@ -43,6 +44,7 @@ class App extends React.Component{
       <Switch>
         <Route exact path="/" component={Home} />
         <Route exact path="/secret" component={Secret} />
+        <Route exact path='/termsofservice' component={TOS} />
         <>
         <RecordingsContext.Provider value={this.state.recordings}>
           {KRoutes}
@@ -50,6 +52,7 @@ class App extends React.Component{
         </>
       </Switch>
       <img className='img-fluid pt-2 mx-auto d-block' src={Pic2} alt="" />
+      <KNavLink page={{url:'/termsofservice', name:'Terms of Service'}}>Terms of Service</KNavLink>
     </Router>
   )
   }
