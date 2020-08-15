@@ -32,6 +32,11 @@ class App extends React.Component{
 
   }
 
+
+  componentDidMount() {
+    fetch('/api').then(res => res.json()).then(data => console.log(data))
+  }
+
   render() {
   return (
     <Router hashType='noslash' basename={process.env.PUBLIC_URL + '/'}>

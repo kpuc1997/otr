@@ -7,11 +7,13 @@ import { Jumbotron,
     Card, } from 'react-bootstrap';
 import Pic3 from './otrbanner.jpeg';
 import { TwitterTimelineEmbed } from 'react-twitter-embed';
+import Streamer from './components/Streamer/Streamer';
 
 class Home extends React.Component{
 
     render(){
         return <div>
+                <Streamer />
                 <Container className=''>
                     <Row className='align-items-center'>
                         <Col xs={12} sm={4} className='pt-4 align-self-center'>
@@ -82,7 +84,7 @@ class Home extends React.Component{
                             />
                     </Col>
                     <Col xs={12} sm={4} align='center' className='mx-auto align-self-center'>
-                        <iframe title='8-1-2020' align='center' src="https://open.spotify.com/embed/playlist/5rreHV3f8UQ3X5XIVEWaLj" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                        <iframe title='8-1-2020' align='center' src="https://open.spotify.com/embed/playlist/5rreHV3f8UQ3X5XIVEWaLj" width="300" height="380" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
                     </Col>
                 </Row>
             </Container>
