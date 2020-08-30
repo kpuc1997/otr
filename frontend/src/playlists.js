@@ -9,7 +9,30 @@ class Playlists extends React.Component{
         return <Container>
                     <Row className='justify-content-around'>
 
+                        {/* 8/29/2020 */}
+                        <Playlist>
+                            <iframe title='8-29-2020' src="https://open.spotify.com/embed/playlist/67h4SJhMyNHE3v3986bLNn" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                        </Playlist>
+
+                        {/* 8/22/2020 */}
+                        <Playlist>
+                            <iframe title='8-22-2020' align='center' src="https://open.spotify.com/embed/playlist/0hAJsMOVkwxLU8HgZKRMmW" width="300" height="380" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                        </Playlist>
+
+                        {/* 8/15/2020 */}
+                        <Playlist>
+                            <iframe title='8-15-2020' align='center' src="https://open.spotify.com/embed/playlist/2TxMEtuzAvmAfwpl1YU0CP" width="300" height="380" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                        </Playlist>
+
+                        {/* 8/8/2020 */}
+                        <Playlist>
+                            <iframe title='8-8-2020' align='center' src="https://open.spotify.com/embed/playlist/5FxB43TTHuh8f9987fAJp2" width="300" height="380" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                        </Playlist>
+
                         {/* 8/1/2020 */}
+                        <Playlist>
+                            <iframe title='8-1-2020' align='center' src="https://open.spotify.com/embed/playlist/5rreHV3f8UQ3X5XIVEWaLj" width="300" height="380" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                        </Playlist>
 
                         {/* 7/25/2020 */}
                         <Playlist>

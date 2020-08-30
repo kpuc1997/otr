@@ -8,12 +8,13 @@ import { Jumbotron,
 import Pic3 from './otrbanner.jpeg';
 import { TwitterTimelineEmbed } from 'react-twitter-embed';
 import Streamer from './components/Streamer/Streamer';
+import billiebaby from './billiebaby.jpg';
 
 class Home extends React.Component{
 
     render(){
         return <div>
-                <Streamer />
+                {/* <Streamer /> */}
                 <Container className=''>
                     <Row className='align-items-center'>
                         <Col xs={12} sm={4} className='pt-4 align-self-center'>
@@ -76,7 +77,7 @@ class Home extends React.Component{
                     </Col>
                 </Row>
                 <Row className='mx-auto align-items-center'>
-                    <Col xs={12} sm={5} className='mx-auto align-self-center'>
+                    <Col xs={12} sm={4} className='mx-auto align-self-center'>
                         <TwitterTimelineEmbed
                             sourceType="profile"
                             screenName="wumlradio"
@@ -84,7 +85,20 @@ class Home extends React.Component{
                             />
                     </Col>
                     <Col xs={12} sm={4} align='center' className='mx-auto align-self-center'>
-                        <iframe title='8-1-2020' align='center' src="https://open.spotify.com/embed/playlist/5rreHV3f8UQ3X5XIVEWaLj" width="300" height="380" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                        <iframe title='8-29-2020' src="https://open.spotify.com/embed/playlist/67h4SJhMyNHE3v3986bLNn" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                    </Col>
+                    <Col xs={12} sm={4} className='mx-auto align-self-center'>
+                        <Card className='mx-auto' style={{ width: '18rem' }}>
+                            <Card.Img variant="top" src={billiebaby} />
+                            <Card.Body>
+                                <Card.Title>Name this Panda</Card.Title>
+                                <Card.Text>
+                                We here at Off the Rails Radio believe the newest baby panda at the 
+                                Smithsonian's National Zoo MUST be named Billie Eilish. Join your voice
+                                in our chorus here at <a href="http://chng.it/pMQDW8R99Q">change.org</a>
+                                </Card.Text>
+                            </Card.Body>
+                        </Card>
                     </Col>
                 </Row>
             </Container>

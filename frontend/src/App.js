@@ -33,9 +33,9 @@ class App extends React.Component{
   }
 
 
-  componentDidMount() {
-    fetch('/api').then(res => res.json()).then(data => console.log(data))
-  }
+  // componentDidMount() {
+  //   fetch('/api').then(res => res.json()).then(data => console.log(data))
+  // }
 
   render() {
   return (
