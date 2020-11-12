@@ -2,11 +2,28 @@ import React from 'react';
 import { Container,
     Row,
     Col,
-    Card, } from 'react-bootstrap';
+    Card,
+    Spinner } from 'react-bootstrap';
 import Pic from './kcsp.jpg';
 import Vic from './vic.png';
 
 class Staff extends React.Component{
+    constructor(props){
+        super(props);
+    
+        this.state={ 
+          BenDescription: <Spinner animation="border" />,
+          VickiDescription: <Spinner animation="border" />,
+          KyleDescription: <Spinner animation="border" />,
+        };
+    
+      }
+
+    componentDidMount() {
+        fetch('/api/text/VickiDescription').then(res => res.json()).then(data => this.setState({VickiDescription: data.Text}));
+        fetch('/api/text/BenDescription').then(res => res.json()).then(data => this.setState({BenDescription: data.Text}));
+        fetch('/api/text/KyleDescription').then(res => res.json()).then(data => this.setState({KyleDescription: data.Text}))
+    }
 
     render(){
         return <div>
@@ -19,10 +36,7 @@ class Staff extends React.Component{
                                 <Card.Body>
                                     <Card.Title>Ben</Card.Title>
                                     <Card.Text>
-                                    Tell me, O Muse, the cause; wherein thwarted in will or wherefore angered, 
-                                    did the Queen of heaven drive a man, of goodness so wondrous, 
-                                    to traverse so many perils, to face so many toils. 
-                                    Can heavenly spirits cherish resentment so dire?
+                                    {this.state.BenDescription}
                                     </Card.Text>
                                 </Card.Body>
                             </Card>
@@ -33,11 +47,7 @@ class Staff extends React.Component{
                                 <Card.Body>
                                     <Card.Title>Vicki</Card.Title>
                                     <Card.Text>
-                                    In nature's fight pit, a host of ruthless bugs as bizarre as they are 
-                                    lethal slug it out in real-life battles to the death. Witness epic 
-                                    encounters between swarms of marauding assassins, and vicious 
-                                    one-on-one clashes where only one bug survives. The world of monster 
-                                    bugs is a jungle, where there's just one law: eat or be eaten.
+                                    {this.state.VickiDescription}
                                     </Card.Text>
                                 </Card.Body>
                             </Card>
@@ -48,8 +58,7 @@ class Staff extends React.Component{
                                 <Card.Body>
                                     <Card.Title>Kyle</Card.Title>
                                     <Card.Text>
-                                    The hip hopenest, rip tearenest, jack hammerenest, bip bopenest DJ this side of the Nile River.
-                                    Stuck in Wyoming trying to get his plane repaired.
+                                    {this.state.KyleDescription}
                                     </Card.Text>
                                 </Card.Body>
                             </Card>

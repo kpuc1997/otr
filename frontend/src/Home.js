@@ -4,13 +4,26 @@ import { Jumbotron,
     Container,
     Row,
     Col,
-    Card, } from 'react-bootstrap';
+    Card,
+    Spinner, } from 'react-bootstrap';
 import Pic3 from './otrbanner.jpeg';
 import { TwitterTimelineEmbed } from 'react-twitter-embed';
 import Streamer from './components/Streamer/Streamer';
 import billiebaby from './billiebaby.jpg';
 
 class Home extends React.Component{
+    constructor(props){
+        super(props);
+    
+        this.state={ 
+          MainDescription: <Spinner animation="border" />,
+        };
+    
+      }
+  
+    componentDidMount() {
+        fetch('/api/text/Main Description').then(res => res.json()).then(data => this.setState({MainDescription: data.Text}))
+    }
 
     render(){
         return <div>
@@ -21,9 +34,7 @@ class Home extends React.Component{
                             <Jumbotron className='pt-3 pb-3'>
                                 <h1>Off the Rails, On the Airwaves</h1>
                                 <p>
-                                With the decline of the coal industry, 3 ex-miners trade in their picaxes for microphones
-                                in this off the cuff radio show. Features include great ecclectic music, insightful talking segments,
-                                and a surprising focus on bakery products. Our motto is, "Monetization at any cost!"
+                                {this.state.MainDescription}
                                 <br/><br/>
                                 Text in! <a href='sms:9789344969'>978-934-4969</a> We can't answer your calls but we can answer your texts.
                                 </p>
