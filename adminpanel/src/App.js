@@ -22,7 +22,8 @@ import Skating from './matadorskating';
 import Poll from './mmmPoll';
 import Playlists from './playlists';
 import Playlist from './components/Misc/playlist.js';
-
+import PlaylistForm from './components/Forms/PlaylistForm';
+import RecordingForm from './components/Forms/RecordingForm';
 
 // React router components generated from external pages.js
 const KLinks = pages.map((item) => (<KNavLink page={item} key={item.name}/>));
@@ -54,11 +55,15 @@ class App extends React.Component{
     fetch('/api/text/BenDescription').then(res => res.json()).then(data => this.setState({BenDescription: data.Text}));
     fetch('/api/text/KyleDescription').then(res => res.json()).then(data => this.setState({KyleDescription: data.Text}));
     fetch('/api/recordings').then(res => res.json()).then(data => this.setState({Recordings: data.map((recording) => (
+      <>
       <iframe key= {recording.Date} title={recording.Date} width="100%" height="120" src={recording.Link} frameBorder="0" ></iframe>
+      <RecordingForm date={recording.Date} />
+      </>
     ))}));
     fetch('/api/playlists').then(res => res.json()).then(data => this.setState({playlists: data.map((playlist) => (
       <Playlist>
           <iframe title={playlist.Date} src={playlist.Link} width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+          <PlaylistForm date={playlist.Date} />
       </Playlist>
     ))}));
     fetch('/api/staff/allstaff').then(res => res.json()).then(data => {

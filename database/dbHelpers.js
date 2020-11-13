@@ -1,7 +1,4 @@
 const sqlite = require("sqlite3");
-const assert = require("assert");
-const fs = require('fs');
-const { isNullOrUndefined } = require("util");
 
 // This should be fixed at some point, but for right now, because the main express script runs
 // from the root folder of the project, this has to be the path, because its relative to that 
@@ -129,6 +126,23 @@ function getPlaylists(db) {
         );
 }
 
+function getSinglePlaylist(db, date) {
+    return new Promise(function(resolve, reject) {
+        // Form and execute query
+        query = `SELECT Date, Link FROM Playlists WHERE Date = ${date};`
+        db.all(query, function(err, rows){
+        if (err) {
+            console.error('Error reading data from database: ')
+            console.error('Query: ', query)
+            console.error(err.message)
+            reject(err)
+        };
+        resolve(rows);
+        }); 
+    }
+);
+}
+
 function getRecordings(db) {
     // Look at the other similar functions with comments for context
     return new Promise(function(resolve, reject) {
@@ -144,6 +158,23 @@ function getRecordings(db) {
             resolve(rows);
             });
     })
+}
+
+function getSingleRecording(db, date) {
+    return new Promise(function(resolve, reject) {
+        // Form and execute query
+        query = `SELECT Date, Link FROM Recordings WHERE Date = ${date};`
+        db.all(query, function(err, rows){
+        if (err) {
+            console.error('Error reading data from database: ')
+            console.error('Query: ', query)
+            console.error(err.message)
+            reject(err)
+        };
+        resolve(rows);
+        }); 
+    }
+);
 }
 
 function updateText(db, name, text) {
@@ -176,11 +207,111 @@ function updateStaffMember(db, number, name, description) {
     })
 }
 
+function updatePlaylist(db, date, link) {
+    return new Promise(function(resolve, reject) {
+        query = `UPDATE Playlists SET Link = '${link}' WHERE Date = '${date}';`
+        db.all(query, function(err, rows){
+            if (err) {
+                console.error('Error from database: ')
+                console.error('Query: ', query)
+                console.error(err.message)
+                reject(err)
+            };
+            resolve(rows);
+            });
+    })
+}
+
+function updateRecording(db, date, link) {
+    return new Promise(function(resolve, reject) {
+        query = `UPDATE Recordings SET Link = '${link}' WHERE Date = '${date}';`
+        db.all(query, function(err, rows){
+            if (err) {
+                console.error('Error from database: ')
+                console.error('Query: ', query)
+                console.error(err.message)
+                reject(err)
+            };
+            resolve(rows);
+            });
+    })
+}
+
+function createPlaylist(db, date, link) {
+    return new Promise(function(resolve, reject) {
+        query = `INSERT INTO Playlists VALUES ('${date}', '${link}');`
+        db.all(query, function(err, rows){
+            if (err) {
+                console.error('Error from database: ')
+                console.error('Query: ', query)
+                console.error(err.message)
+                reject(err)
+            };
+            resolve(rows);
+            });
+    })
+}
+
+function createRecording(db, date, link) {
+    return new Promise(function(resolve, reject) {
+        query = `INSERT INTO Recordings VALUES ('${date}', '${link}');`
+        db.all(query, function(err, rows){
+            if (err) {
+                console.error('Error from database: ')
+                console.error('Query: ', query)
+                console.error(err.message)
+                reject(err)
+            };
+            resolve(rows);
+            });
+    })
+}
+
+function deletePlaylist(db, date) {
+    return new Promise(function(resolve, reject) {
+        query = `DELETE FROM Playlists WHERE Date = ${date};`
+        db.all(query, function(err, rows){
+            if (err) {
+                console.error('Error from database: ')
+                console.error('Query: ', query)
+                console.error(err.message)
+                reject(err)
+            };
+            resolve(rows);
+            });
+    })
+}
+
+function deleteRecording(db, date) {
+    return new Promise(function(resolve, reject) {
+        query = `DELETE FROM Recordings WHERE Date = ${date};`
+        db.all(query, function(err, rows){
+            if (err) {
+                console.error('Error from database: ')
+                console.error('Query: ', query)
+                console.error(err.message)
+                reject(err)
+            };
+            resolve(rows);
+            });
+    })
+}
+
 exports.getText = dbWrapper(getText);
 exports.getStaff = dbWrapper(getStaff);
 exports.getStaffMember = dbWrapper(getStaffMember);
 exports.getPlaylists = dbWrapper(getPlaylists);
+exports.getSinglePlaylist = dbWrapper(getSinglePlaylist);
 exports.getRecordings = dbWrapper(getRecordings);
+exports.getSingleRecording = dbWrapper(getSingleRecording);
 
 exports.updateText = dbWrapper(updateText);
 exports.updateStaffMember = dbWrapper(updateStaffMember);
+exports.updatePlaylist = dbWrapper(updatePlaylist);
+exports.updateRecording = dbWrapper(updateRecording);
+
+exports.createPlaylist = dbWrapper(createPlaylist);
+exports.createRecording = dbWrapper(createRecording);
+
+exports.deletePlaylist = dbWrapper(deletePlaylist);
+exports.deleteRecording = dbWrapper(deleteRecording);
