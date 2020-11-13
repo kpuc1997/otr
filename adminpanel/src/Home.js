@@ -8,6 +8,7 @@ import { Jumbotron,
 import Pic3 from './otrbanner.jpeg';
 import { TwitterTimelineEmbed } from 'react-twitter-embed';
 import billiebaby from './billiebaby.jpg';
+import TextForm from './components/Forms/TextForm';
 
 class Home extends React.Component{
 
@@ -20,6 +21,7 @@ class Home extends React.Component{
                                 <h1>Off the Rails, On the Airwaves</h1>
                                 <p>
                                 {this.props.MainDescription}
+                                <TextForm title='Edit Main Description' name='Main Description'/>
                                 <br/><br/>
                                 Text in! <a href='sms:9789344969'>978-934-4969</a> We can't answer your calls but we can answer your texts.
                                 </p>

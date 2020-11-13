@@ -1,0 +1,25 @@
+{
+  "short_name": "Off the Rails",
+  "name": "Off the Rails Radio",
+  "icons": [
+    {
+      "src": "WUML 2.png",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/png"
+    },
+    {
+      "src": "WUML 2.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "WUML 2.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": "/",
+  "display": "standalone",
+  "theme_color": "#A31F34",
+  "background_color": "#C2C0BF"
+}

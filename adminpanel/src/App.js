@@ -43,6 +43,7 @@ class App extends React.Component{
       Recordings: <Spinner animation="border" />,
       playlists: <Spinner animation="border" />,
       staff: [],
+
     };
 
   }
@@ -63,7 +64,6 @@ class App extends React.Component{
     fetch('/api/staff/allstaff').then(res => res.json()).then(data => {
       this.setState({staff: data})
     });
-
 }
 
   render() {

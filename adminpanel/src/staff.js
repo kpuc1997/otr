@@ -5,6 +5,8 @@ import { Container,
     Card, } from 'react-bootstrap';
 import Pic from './kcsp.jpg';
 import Vic from './vic.png';
+import TextForm from './components/Forms/TextForm';
+import StaffForm from './components/Forms/StaffForm';
 
 class Staff extends React.Component{
 
@@ -31,6 +33,8 @@ class Staff extends React.Component{
                                     <Card.Title>Ben</Card.Title>
                                     <Card.Text>
                                     {this.props.ben}
+                                    <br/>
+                                    <TextForm title="Edit Ben's Description" name='BenDescription' />
                                     </Card.Text>
                                 </Card.Body>
                             </Card>
@@ -42,6 +46,8 @@ class Staff extends React.Component{
                                     <Card.Title>Vicki</Card.Title>
                                     <Card.Text>
                                     {this.props.vicki}
+                                    <br/>
+                                    <TextForm title="Edit Vicki's Description" name='VickiDescription' />
                                     </Card.Text>
                                 </Card.Body>
                             </Card>
@@ -53,6 +59,8 @@ class Staff extends React.Component{
                                     <Card.Title>Kyle</Card.Title>
                                     <Card.Text>
                                     {this.props.kyle}
+                                    <br/>
+                                    <TextForm title="Edit Kyle's Description" name='KyleDescription' />
                                     </Card.Text>
                                 </Card.Body>
                             </Card>
@@ -67,6 +75,7 @@ class Staff extends React.Component{
                                     <Card.Text>
                                     {staff[0].Description}
                                     </Card.Text>
+                                    <StaffForm staffnumber={1} title='Staff Member 1 Edit'/>
                                 </Card.Body>
                             </Card>
                         </Col>
@@ -78,6 +87,7 @@ class Staff extends React.Component{
                                     <Card.Text>
                                     {staff[1].Description}
                                     </Card.Text>
+                                    <StaffForm staffnumber={2} title='Staff Member 2 Edit'/>
                                 </Card.Body>
                             </Card>
                         </Col>
@@ -89,6 +99,7 @@ class Staff extends React.Component{
                                     <Card.Text>
                                         {staff[2].Description}
                                     </Card.Text>
+                                    <StaffForm staffnumber={3} title='Staff Member 3 Edit'/>
                                 </Card.Body>
                             </Card>
                         </Col>
@@ -102,6 +113,7 @@ class Staff extends React.Component{
                                     <Card.Text>
                                         {staff[3].Description}
                                     </Card.Text>
+                                    <StaffForm staffnumber={4} title='Staff Member 4 Edit'/>
                                 </Card.Body>
                             </Card>
                         </Col>
@@ -113,6 +125,7 @@ class Staff extends React.Component{
                                     <Card.Text>
                                         {staff[4].Description}
                                     </Card.Text>
+                                    <StaffForm staffnumber={5} title='Staff Member 5 Edit'/>
                                 </Card.Body>
                             </Card>
                         </Col>
@@ -124,6 +137,7 @@ class Staff extends React.Component{
                                     <Card.Text>
                                         {staff[5].Description}
                                     </Card.Text>
+                                    <StaffForm staffnumber={6} title='Staff Member 6 Edit'/>
                                 </Card.Body>
                             </Card>
                         </Col>
