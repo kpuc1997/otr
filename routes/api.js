@@ -3,6 +3,25 @@ var router = express.Router();
 
 const dbHelper = require("../database/dbHelpers");
 
+// Authentication middleware
+function withAuthentication(req, res, next) {
+  // Get auth token from the cookies
+  const authToken = req.cookies['AuthToken'];
+
+  // Get auth token from database and compare
+  dbHelper.getAuthToken('Admin').then((result) => {
+      actualToken = result[0].AuthToken;
+
+      if (authToken === actualToken) {
+          console.log('Matched!')
+          next();
+      }
+      else {
+          res.redirect('/admin/login')
+      }
+  })
+}
+
 // api calls for otr 
 
 // GET any page text
@@ -51,7 +70,7 @@ router.get('/recording/:date', function(req, res) {
 })
 
 // Update any page text
-router.put('/text/:name', function(req, res) {
+router.put('/text/:name', withAuthentication, function(req, res) {
   dbHelper.updateText(req.params['name'], req.body.text).then((result) => {
     res.status(200).send('OK')
   }).catch((err) => {
@@ -61,7 +80,7 @@ router.put('/text/:name', function(req, res) {
 })
 
 // Update a staff members information
-router.put('/staff/:number', function(req, res) {
+router.put('/staff/:number', withAuthentication, function(req, res) {
   dbHelper.updateStaffMember(req.params['number'], req.body.Name, req.body.Description).then((result) => {
     res.status(200).send('OK')
   }).catch((err) => {
@@ -71,7 +90,7 @@ router.put('/staff/:number', function(req, res) {
 })
 
 // Update a Playlist
-router.put('/playlist/:date', function(req, res) {
+router.put('/playlist/:date', withAuthentication, function(req, res) {
   dbHelper.updatePlaylist(req.params['date'], req.body.link).then((result) => {
     res.status(200).send('OK')
   }).catch((err) => {
@@ -81,7 +100,7 @@ router.put('/playlist/:date', function(req, res) {
 })
 
 // Update a Recording
-router.put('/recording/:date', function(req, res) {
+router.put('/recording/:date', withAuthentication, function(req, res) {
   dbHelper.updateRecording(req.params['date'], req.body.link).then((result) => {
     res.status(200).send('OK')
   }).catch((err) => {
@@ -91,7 +110,7 @@ router.put('/recording/:date', function(req, res) {
 })
 
 // Create a Playlist
-router.post('/playlist/:date', function(req, res) {
+router.post('/playlist/:date', withAuthentication, function(req, res) {
   dbHelper.createPlaylist(req.params['date'], req.body.link).then((result) => {
     res.status(200).send('OK')
   }).catch((err) => {
@@ -101,7 +120,7 @@ router.post('/playlist/:date', function(req, res) {
 })
 
 // Create a Recording
-router.post('/recording/:date', function(req, res) {
+router.post('/recording/:date', withAuthentication, function(req, res) {
   dbHelper.createRecording(req.params['date'], req.body.link).then((result) => {
     res.status(200).send('OK')
   }).catch((err) => {
@@ -111,7 +130,7 @@ router.post('/recording/:date', function(req, res) {
 })
 
 // Delete a Playlist
-router.delete('/playlist/:date', function(req, res) {
+router.delete('/playlist/:date', withAuthentication, function(req, res) {
   dbHelper.deletePlaylist(req.params['date']).then((result) => {
     res.status(200).send('OK')
   }).catch((err) => {
@@ -121,7 +140,7 @@ router.delete('/playlist/:date', function(req, res) {
 })
 
 // Delete a Recording
-router.delete('/recording/:date', function(req, res) {
+router.delete('/recording/:date', withAuthentication, function(req, res) {
   dbHelper.deleteRecording(req.params['date']).then((result) => {
     res.status(200).send('OK')
   }).catch((err) => {

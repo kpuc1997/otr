@@ -297,6 +297,55 @@ function deleteRecording(db, date) {
     })
 }
 
+function getPassword(db, user) {
+    return new Promise(function(resolve, reject) {
+        // Form and execute query
+        query = `SELECT Password FROM Passwords WHERE User = '${user}';`
+        db.all(query, function(err, rows){
+        if (err) {
+            console.error('Error reading data from database: ')
+            console.error('Query: ', query)
+            console.error(err.message)
+            reject(err)
+        };
+        resolve(rows);
+        }); 
+    }
+);
+}
+
+function storeAuthToken(db, user, token) {
+    return new Promise(function(resolve, reject) {
+        query = `UPDATE Passwords SET AuthToken = '${token}' WHERE User = '${user}';`
+        db.all(query, function(err, rows){
+            if (err) {
+                console.error('Error from database: ')
+                console.error('Query: ', query)
+                console.error(err.message)
+                reject(err)
+            };
+            resolve(rows);
+            });
+    })
+}
+
+function getAuthToken(db, user) {
+    return new Promise(function(resolve, reject) {
+        // Form and execute query
+        query = `SELECT AuthToken FROM Passwords WHERE User = '${user}';`
+        db.all(query, function(err, rows){
+        if (err) {
+            console.error('Error reading data from database: ')
+            console.error('Query: ', query)
+            console.error(err.message)
+            reject(err)
+        };
+        resolve(rows);
+        }); 
+    }
+);
+}
+
 exports.getText = dbWrapper(getText);
 exports.getStaff = dbWrapper(getStaff);
 exports.getStaffMember = dbWrapper(getStaffMember);
@@ -315,3 +364,7 @@ exports.createRecording = dbWrapper(createRecording);
 
 exports.deletePlaylist = dbWrapper(deletePlaylist);
 exports.deleteRecording = dbWrapper(deleteRecording);
+
+exports.getPassword = dbWrapper(getPassword);
+exports.storeAuthToken = dbWrapper(storeAuthToken);
+exports.getAuthToken = dbWrapper(getAuthToken);
