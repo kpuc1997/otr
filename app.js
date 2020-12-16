@@ -26,7 +26,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
-app.use(helmet);
+app.use(helmet());
 
 // Include other routes via external files
 // app.use('/', indexRouter); // Included from boilerplate express-generator

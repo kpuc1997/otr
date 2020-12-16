@@ -3,7 +3,7 @@ const sqlite = require("sqlite3");
 // This should be fixed at some point, but for right now, because the main express script runs
 // from the root folder of the project, this has to be the path, because its relative to that 
 // file, not this one.
-const dbPath = "./database/otr.db"
+const dbPath = "/home/pi/otr/database/otr.db"
 
 // Provide a wrapper to access and clean up the dbContext
 function dbWrapper(func) {
